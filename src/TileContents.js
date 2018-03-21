@@ -2,7 +2,8 @@ import React from 'react';
 
 const styles = {
   container: {
-    border: "1px solid black"
+    border: "1px solid black",
+    textAlign: "center"
   }
 }
 

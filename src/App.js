@@ -13,29 +13,37 @@ const styles = {
     display: 'flex',
     flexWrap: 'nowrap',
     overflowX: 'auto',
-  },
-  titleStyle: {
-    color: 'rgb(0, 188, 212)',
-  },
+  }
 };
 
 class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-      <div style={styles.root} className="App">
-        <GridList style={styles.gridList} cols={2.2}>
-          <GridTile>
-            <TileContents />
-          </GridTile>
-          <GridTile>
-            <TileContents />
-          </GridTile>
-          <GridTile>
-            <TileContents />
-          </GridTile>
-        </GridList>
-      </div>
+        <div style={styles.root} className="App">
+
+          <GridList style={styles.gridList} cols={2.2}>
+            <GridTile>
+              <TileContents />
+            </GridTile>
+            <GridTile>
+              <TileContents />
+            </GridTile>
+            <GridTile>
+              <TileContents />
+            </GridTile>
+          </GridList>
+
+          <GridList style={styles.gridList} cols={2.2}>
+            <GridTile>
+              <TileContents />
+            </GridTile>
+            <GridTile>
+              <TileContents />
+            </GridTile>
+          </GridList>
+
+        </div>
       </MuiThemeProvider>
     );
   }
